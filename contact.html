@@ -6,6 +6,9 @@
     <title>Haven Muse</title>
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="font-[poppins]">
     <header class="hidden shadow-sm shadow-purple-300 md:h-[70px] md:w-full md:bg-white md:bg-opacity-10 md:backdrop-filter md:backdrop-blur-lg md:z-50 md:flex md:justify-between md:px-[5%]">
@@ -25,32 +28,32 @@
         <img src="./img/navigation-svgrepo-com.svg" alt="" class="w-8">
     </header>
 
-    <div class="grid justify-center md:grid-cols-10 mt-6 md:mt-9 lg:mt-12 mx-auto w-[90%]">
-        <div class="md:col-span-7 order-2 md:order-1 flex flex-col gap-7">
+    <div class="grid justify-center md:grid-cols-10 mt-6 md:mt-9 lg:mt-12 mx-auto w-[90%] gap-y-[60px]">
+        <div class="md:col-span-6 lg:col-span-7 order-2 md:order-1 flex flex-col gap-7">
             <div>
                 <p class="font-curly text-[#4B2A63] text-[40px] md:text-[60px] lg:text-[70px]">Contact us</p>
                 <p class="text-[#828282] text-[10px] md:text-[11px] lg:text-[12px] mt-[-10px] md:mt-[-20px]">Get in Touch with Haven Muse - Let's Create Your Dream Space Together</p>
             </div>
             <form id="customForm" class="space-y-2" action="">
-                <div class="flex gap-2 w-full">
-                    <div>
+                <div class="grid grid-cols-2 gap-2 md:w-[70%]">
+                    <div class="">
                         <label for="firstName" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">First name</label>
-                        <input type="text" id="firstName" name="firstName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                        <input type="text" id="firstName" name="firstName" class="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-2" required>
                     </div>
                     <div>
                         <label for="lastName" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Last name</label>
-                        <input type="text" id="lastName" name="lastName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                        <input type="text" id="lastName" name="lastName" class="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-2" required>
                     </div>
                 </div>
                 <div class="">
                     <label for="emailAddress" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Email address</label>
-                    <input type="email" id="emailAddress" name="emailAddress" class="mt-1 block w-full md:w-[60%] border border-gray-300 rounded-md shadow-sm p-2" required>
+                    <input type="email" id="emailAddress" name="emailAddress" class="mt-1 block w-full md:w-[70%] border border-gray-300 rounded-md shadow-sm p-2" required>
                 </div>
                 <div>
                     <label for="message" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Your message</label>
-                    <textarea id="message" name="message" class="mt-1 block w-full md:w-[60%] border border-gray-300 rounded-md shadow-sm p-2" required></textarea>
+                    <textarea id="message" name="message" class="mt-1 block w-full md:w-[70%] border border-gray-300 rounded-md shadow-sm p-2" required></textarea>
                 </div>
-                <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md">Submit</button>
+                <button type="submit" class="flex items-center bg-gradient-to-r from-[#9955BB] to-[#462755] hover:from-pink-500 hover:to-yellow-500 text-white py-2 px-7 text-[12px] md:text-[14px] rounded-md h-[30px] hover:bg-purple-500">Submit</button>
             </form>
             <div id="responseMessage" class="mt-4 text-center"></div>
         </div>
@@ -59,9 +62,41 @@
             <h1 class="text-2xl font-bold mb-4">Sign Up</h1>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLw83FgL9VpxSkbwT0Tq7Z4xVVlVu7BcnIbq9drwB1tRDe4Q/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div> -->
-        <img class="md:col-span-3 rounded-2xl order-1 md:order-2" src="./img/CEO.JPG" alt="CEO">
+        <img class="md:col-span-4 lg:col-span-3 rounded-2xl order-1 md:order-2 my-auto" src="./img/CEO.JPG" alt="CEO">
     </div>
 
+
+    <div class="bg-[#CB8EEC] text-[#4F4F4F] px-10 bg-opacity-20 w-full h-[600px] flex flex-col justify-center md:h-[619px] mt-16 md:mt-40">
+        <div class="flex flex-col gap-y-9 md:grid md:grid-cols-9">
+            <div class="text-[12px] lg:text-[14px] text-justify md:col-span-3 md:w-[80%]">
+                At Haven Muse, we're driven by our passion to redefine interior design through innovative approaches that challenge convention and enhance the art of crafting stunning spaces.
+            </div>
+            <div class="flex flex-col gap-4 md:gap-5 lg:gap-7 md:col-span-2">
+                <div class="font-semibold text-[16px] lg:text-[18px]">Our Expertise</div>
+                <ul class="font-medium text-[12px] lg:text-[14px] flex flex-col gap-1.5 lg:gap-2">
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Ceiling</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4 md:gap-5 lg:gap-7 md:col-span-2">
+                <p class="font-semibold text-[16px] lg:text-[18px]">Get in touch</p>
+                <div class="font-medium text-[12px] lg:text-[14px] flex flex-col gap-1.5 lg:gap-2">
+                    <p>landinteriors@gmail.com</p>
+                    <p>+91 98987 65656</p>
+                </div>
+            </div>
+            <div class="flex gap-2 items-start md:col-span-2">
+                <img src="./img/fb.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/linkedin.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/twitter.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/youtube.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/insta.svg" alt="Facebook-icon" class="w-5 md:w-7">
+            </div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>

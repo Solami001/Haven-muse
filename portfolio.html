@@ -6,8 +6,62 @@
     <title>Haven Muse</title>
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-500">
-    
+<body class="font-[poppins]">
+    <header class="hidden shadow-sm shadow-purple-300 md:h-[70px] md:w-full md:bg-white md:bg-opacity-10 md:backdrop-filter md:backdrop-blur-lg md:z-50 md:flex md:justify-between md:px-[5%]">
+        <div class="flex items-center">Logo</div>
+        <nav class="flex items-center p-4">
+            <ul class="flex space-x-6 text-gray-800 font-medium text-[15px]">
+                <li><a href="./index.html" id="home-link" class="hover:text-purple-600">Home</a></li>
+                <li><a href="./about.html"  id="about-link" class="hover:text-purple-600">About</a></li>
+                <li><a href="./portfolio.html" id="portfolio-link" class="hover:text-purple-600">Portfolio</a></li>
+                <li><a href="./contact.html" id="contact-link" class="hover:text-purple-600">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="flex items-center bg-purple-400 text-white py-2 px-4 rounded-md h-[30px] my-auto hover:bg-purple-500">Chat with Us</button>
+    </header>
+    <header class="shadow-sm shadow-purple-300 flex md:hidden h-[70px] md:w-full bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg z-50 justify-between px-[5%]">
+        <div class="flex items-center">Logo</div>
+        <img src="./img/navigation-svgrepo-com.svg" alt="" class="w-8">
+    </header>
+
+
+
+    <div class="bg-[#CB8EEC] text-[#4F4F4F] px-10 bg-opacity-20 w-full h-[600px] flex flex-col justify-center md:h-[619px] mt-16 md:mt-40">
+        <div class="flex flex-col gap-y-9 md:grid md:grid-cols-9">
+            <div class="text-[12px] lg:text-[14px] text-justify md:col-span-3 md:w-[80%]">
+                At Haven Muse, we're driven by our passion to redefine interior design through innovative approaches that challenge convention and enhance the art of crafting stunning spaces.
+            </div>
+            <div class="flex flex-col gap-4 md:gap-5 lg:gap-7 md:col-span-2">
+                <div class="font-semibold text-[16px] lg:text-[18px]">Our Expertise</div>
+                <ul class="font-medium text-[12px] lg:text-[14px] flex flex-col gap-1.5 lg:gap-2">
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Ceiling</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4 md:gap-5 lg:gap-7 md:col-span-2">
+                <p class="font-semibold text-[16px] lg:text-[18px]">Get in touch</p>
+                <div class="font-medium text-[12px] lg:text-[14px] flex flex-col gap-1.5 lg:gap-2">
+                    <p>landinteriors@gmail.com</p>
+                    <p>+91 98987 65656</p>
+                </div>
+            </div>
+            <div class="flex gap-2 items-start md:col-span-2">
+                <img src="./img/fb.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/linkedin.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/twitter.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/youtube.svg" alt="Facebook-icon" class="w-5 md:w-7">
+                <img src="./img/insta.svg" alt="Facebook-icon" class="w-5 md:w-7">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
