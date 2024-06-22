@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-ddocument.getElementById('customForm').addEventListener('submit', function(event) {
+document.getElementById('customForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     var firstName = document.getElementById('firstName').value;
@@ -20,9 +20,9 @@ ddocument.getElementById('customForm').addEventListener('submit', function(event
     var emailAddress = document.getElementById('emailAddress').value;
     var message = document.getElementById('message').value;
 
-    fetch('https://script.google.com/macros/s/AKfycbzoIdsevJDIzXZyKUZwFPyQRMC0KbjqTz8GpzqaX60i8lxbew6a35UJxQU6CPpMOC5I/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxtk3n_ZF7cWfk7uvNOtTG7jPiJfZiyoeBq9hSNwJifIy0b6-kYet5-oaSGpfyGU5HE/exec', {
         method: 'POST',
-        body: JSON.stringify({firstName: firstName, lastName: lastName, emailAddress: emailAddress, message: message}),
+        body: JSON.stringify({FirstName: firstName, lastName: lastName, emailAddress: emailAddress, message: message}),
         headers: {
             'Content-Type': 'application/json'
         }
