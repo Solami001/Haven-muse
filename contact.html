@@ -7,7 +7,62 @@
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    
+<body class="font-[poppins]">
+    <header class="hidden shadow-sm shadow-purple-300 md:h-[70px] md:w-full md:bg-white md:bg-opacity-10 md:backdrop-filter md:backdrop-blur-lg md:z-50 md:flex md:justify-between md:px-[5%]">
+        <div class="flex items-center">Logo</div>
+        <nav class="flex items-center p-4">
+            <ul class="flex space-x-6 text-gray-800 font-medium text-[15px]">
+                <li><a href="./index.html" id="home-link" class="hover:text-purple-600">Home</a></li>
+                <li><a href="./about.html"  id="about-link" class="hover:text-purple-600">About</a></li>
+                <li><a href="./portfolio.html" id="portfolio-link" class="hover:text-purple-600">Portfolio</a></li>
+                <li><a href="./contact.html" id="contact-link" class="hover:text-purple-600">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="flex items-center bg-purple-400 text-white py-2 px-4 rounded-md h-[30px] my-auto hover:bg-purple-500">Chat with Us</button>
+    </header>
+    <header class="shadow-sm shadow-purple-300 flex md:hidden h-[70px] md:w-full bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg z-50 justify-between px-[5%]">
+        <div class="flex items-center">Logo</div>
+        <img src="./img/navigation-svgrepo-com.svg" alt="" class="w-8">
+    </header>
+
+    <div class="grid justify-center md:grid-cols-10 mt-6 md:mt-9 lg:mt-12 mx-auto w-[90%]">
+        <div class="md:col-span-7 order-2 md:order-1 flex flex-col gap-7">
+            <div>
+                <p class="font-curly text-[#4B2A63] text-[40px] md:text-[60px] lg:text-[70px]">Contact us</p>
+                <p class="text-[#828282] text-[10px] md:text-[11px] lg:text-[12px] mt-[-10px] md:mt-[-20px]">Get in Touch with Haven Muse - Let's Create Your Dream Space Together</p>
+            </div>
+            <form id="customForm" class="space-y-2" action="">
+                <div class="flex gap-2 w-full">
+                    <div>
+                        <label for="firstName" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">First name</label>
+                        <input type="text" id="firstName" name="firstName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                    </div>
+                    <div>
+                        <label for="lastName" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Last name</label>
+                        <input type="text" id="lastName" name="lastName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                    </div>
+                </div>
+                <div class="">
+                    <label for="emailAddress" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Email address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" class="mt-1 block w-full md:w-[60%] border border-gray-300 rounded-md shadow-sm p-2" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-[12px] md:text-sm font-medium text-[#4B2A63]">Your message</label>
+                    <textarea id="message" name="message" class="mt-1 block w-full md:w-[60%] border border-gray-300 rounded-md shadow-sm p-2" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md">Submit</button>
+            </form>
+            <div id="responseMessage" class="mt-4 text-center"></div>
+        </div>
+
+        <!-- <div class="max-w-lg w-full p-8 bg-white shadow-md rounded-lg">
+            <h1 class="text-2xl font-bold mb-4">Sign Up</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLw83FgL9VpxSkbwT0Tq7Z4xVVlVu7BcnIbq9drwB1tRDe4Q/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div> -->
+        <img class="md:col-span-3 rounded-2xl order-1 md:order-2" src="./img/CEO.JPG" alt="CEO">
+    </div>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
