@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haven Muse</title>
     <link href="./output.css" rel="stylesheet">
+    <style>
+        /* Custom styles for smooth sidebar transition */
+        .sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hidden-sidebar {
+            transform: translateX(-100%);
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-180deg);
+            }
+        }
+        .spin-animation {
+            animation: spin 0.3s linear;
+        }
+    </style>
     <link href="./input.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
