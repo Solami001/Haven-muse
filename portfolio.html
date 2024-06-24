@@ -25,6 +25,15 @@
         .spin-animation {
             animation: spin 0.3s linear;
         }
+        .hidden-element {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .show-element {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,7 +81,7 @@
     </section>
 
 
-    <div class="container w-[95%] md:w-[85%] mx-auto mt-12 md:mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2">
+    <div class=" container w-[95%] md:w-[85%] mx-auto mt-12 md:mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2">
         <img src="./img/portimage1.jpg" class="portfolio-image w-full h-auto cursor-pointer md:rounded-ss-[40px]" alt="Portfolio Image 1">
         <img src="./img/portimage2.jpg" class="portfolio-image object-cover h-full cursor-pointer row-span-2" alt="Portfolio Image 2">
         <img src="./img/portimage3.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 3">
@@ -102,12 +111,12 @@
 
     <div class="w-[50%] md:w-[50%] lg:w-[60%] mx-auto my-28 md:my-44 flex flex-col gap-2 md:gap-4 lg:gap-5">
         <p class="text-center text-[15px] md:text-[17px] lg:text-[20px] text-[#4B2A63]">Let’s Transform Your Dream Space Together</p>
-        <a class="cursor-pointer w-[100%] md:w-[90%] lg:w-[70%] mx-auto flex items-center justify-center text-white text-[12px] md:text-[14px] h-[35px] md:h-[40px] lg:h-[50px] bg-gradient-to-r from-[#9955BB] to-[#462755] hover:from-pink-500 hover:to-yellow-500 rounded-lg md:rounded-xl hover:bg-purple-500">Transform My Space</a>
+        <a class="cursor-pointer w-[100%] md:w-[90%] lg:w-[70%] mx-auto flex items-center justify-center text-white text-[12px] md:text-[14px] h-[35px] md:h-[40px] lg:h-[50px] bg-gradient-to-r from-[#9955BB] to-[#462755] hover:bg-gradient-to-b hover:from-purple-100 hover:to-purple-300 hover:text-[#462755] hover:tracking-wider rounded-lg md:rounded-xl hover:bg-purple-500">Transform My Space</a>
     </div>
 
 
 
-    <div class="bg-[#CB8EEC] text-[#4F4F4F] px-10 bg-opacity-20 w-full h-[600px] flex flex-col justify-center md:h-[520px] mt-16 md:mt-40">
+    <div class=" bg-[#CB8EEC] text-[#4F4F4F] px-10 bg-opacity-20 w-full h-[600px] flex flex-col justify-center md:h-[520px] mt-16 md:mt-40">
         <div class="flex flex-col gap-y-9 md:grid md:grid-cols-9">
             <div class="text-[12px] lg:text-[14px] text-justify md:col-span-3 md:w-[80%]">
                 At Haven Muse, we're driven by our passion to redefine interior design through innovative approaches that challenge convention and enhance the art of crafting stunning spaces.
