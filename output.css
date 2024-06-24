@@ -3348,6 +3348,10 @@ video {
   transform: translateY(0);
 }
 
+.transition-duration {
+  transition-duration: 2s;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

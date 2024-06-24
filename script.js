@@ -12,35 +12,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// document.getElementById('customForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
+document.getElementById('customForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-//     var firstName = document.getElementById('firstName').value;
-//     var lastName = document.getElementById('lastName').value;
-//     var emailAddress = document.getElementById('emailAddress').value;
-//     var message = document.getElementById('message').value;
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var emailAddress = document.getElementById('emailAddress').value;
+    var message = document.getElementById('message').value;
 
-//     fetch('https://script.google.com/macros/s/AKfycbxtk3n_ZF7cWfk7uvNOtTG7jPiJfZiyoeBq9hSNwJifIy0b6-kYet5-oaSGpfyGU5HE/exec', {
-//         method: 'POST',
-//         body: JSON.stringify({FirstName: firstName, lastName: lastName, emailAddress: emailAddress, message: message}),
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         if (data.result === 'success') {
-//             document.getElementById('responseMessage').innerText = 'Form submitted successfully!';
-//             document.getElementById('customForm').reset();
-//         } else {
-//             document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
-//         }
-//     })
-//     .catch(error => {
-//         document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
-//         console.error('Error:', error);
-//     });
-// });
+    fetch('https://script.google.com/macros/s/AKfycbxtk3n_ZF7cWfk7uvNOtTG7jPiJfZiyoeBq9hSNwJifIy0b6-kYet5-oaSGpfyGU5HE/exec', {
+        method: 'POST',
+        body: JSON.stringify({FirstName: firstName, lastName: lastName, emailAddress: emailAddress, message: message}),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === 'success') {
+            document.getElementById('responseMessage').innerText = 'Form submitted successfully!';
+            document.getElementById('customForm').reset();
+        } else {
+            document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
+        }
+    })
+    .catch(error => {
+        document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
+        console.error('Error:', error);
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -241,6 +241,18 @@ document.addEventListener('DOMContentLoaded', () => {
     hiddenElements.forEach(element => {
       observer.observe(element);
     });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const textElement = document.querySelector('.rolling-text');
+    const textContent = textElement.textContent;
+    textElement.textContent = '';
+  
+    for (let i = 0; i < textContent.length; i++) {
+      setTimeout(() => {
+        textElement.textContent += textContent[i];
+      }, 100 * i);
+    }
   });
   
   

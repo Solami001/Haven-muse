@@ -131,3 +131,6 @@
         opacity: 1;
         transform: translateY(0);
     }
+    .transition-duration {
+      transition-duration: 2s; 
+    }
