@@ -72,19 +72,29 @@
     </section>
 
 
-    <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-4 gap-2">
-        <img src="./img/banner-desktop.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 1">
-        <img src="./img/banner-desktop.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 2">
+    <div class="container w-[95%] md:w-[85%] mx-auto mt-12 md:mt-14 lg:mt-20 grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2">
+        <img src="./img/portimage1.jpg" class="portfolio-image w-full h-auto cursor-pointer md:rounded-ss-[40px]" alt="Portfolio Image 1">
+        <img src="./img/portimage2.jpg" class="portfolio-image object-cover h-full cursor-pointer row-span-2" alt="Portfolio Image 2">
+        <img src="./img/portimage3.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 3">
+        <img src="./img/portimage4.jpg" class="portfolio-image object-cover h-full cursor-pointer row-span-2 md:rounded-se-[40px]" alt="Portfolio Image 4">
+        <img src="./img/portimage5.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 5">
+        <img src="./img/portimage6.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 6">
+        <img src="./img/portimage7.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 7">
+        <img src="./img/portimage8.jpg" class="portfolio-image object-cover h-full cursor-pointer row-span-2" alt="Portfolio Image 8">
+        <img src="./img/portimage9.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 9">
+        <img src="./img/portimage10.jpg" class="portfolio-image object-cover h-full cursor-pointer row-span-2 md:rounded-ee-[40px]" alt="Portfolio Image 10">
+        <img src="./img/portimage11.jpg" class="portfolio-image w-full h-auto cursor-pointer md:rounded-es-[40px]" alt="Portfolio Image 11">
+        <img src="./img/portimage12.jpg" class="portfolio-image w-full h-auto cursor-pointer" alt="Portfolio Image 12">
         <!-- Add more images as needed -->
     </div>
 
-    <div id="modal" class="fixed inset-0 hidden items-center justify-center backdrop-blur-sm pt-5 lg:pt-16">
-        <div class="relative max-w-3xl w-full p-4 rounded flex flex-col gap-2 md:gap-6">
+    <div id="modal" class="fixed inset-0 hidden items-center justify-center backdrop-blur-sm pt-5 lg:pt-10">
+        <div class="relative max-w-3xl w-full p-4 rounded flex flex-col gap-2 md:gap-4">
             <!-- <span class="close absolute top-2 right-4 text-gray-500 text-2xl cursor-pointer">&times;</span> -->
-            <img class="modal-content w-[95%] md:w-[90%] lg:w-full mx-auto h-auto rounded-[30px]" id="modalImage">
+            <img class="modal-content w-[95%] md:w-[90%] lg:w-[80%] mx-auto rounded-[30px]" id="modalImage">
             <div class="modal-buttons flex justify-center gap-2 md:gap-4 mt-4 h-9 md:h-11 lg:h-12">
                 <button id="goBack" class="bg-white hover:bg-gray-400 text-[#9955BB] border-[1px] border-solid border-[#9955BB] font-medium rounded-md md:rounded-xl w-[40%] md:w-[30%] text-[14px] lg:w-[35%]">Go Back</button>
-                <button id="continueChat" class="bg-gradient-to-r from-[#9955BB] to-[#462755] hover:from-pink-500 hover:to-yellow-500 rounded-md md:rounded-xl text-white text-[14px] font-medium w-[40%] md:w-[30%] lg:w-[35%]">Continue to Chat</button>
+                <button id="continueChat" class="bg-gradient-to-r from-[#9955BB] to-[#462755] hover:from-pink-500 hover:to-yellow-500 rounded-md md:rounded-xl text-white text-[14px] font-medium w-[50%] md:w-[30%] lg:w-[35%]">Continue to Chat</button>
             </div>
         </div>
     </div>
