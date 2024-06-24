@@ -62,4 +62,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImage');
+    const goBackBtn = document.getElementById('goBack');
+    const continueChatBtn = document.getElementById('continueChat');
+    
+    const portfolioImages = document.querySelectorAll('.portfolio-image');
+    portfolioImages.forEach(image => {
+        image.addEventListener('click', function() {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
+    });
+    
+
+
+    goBackBtn.onclick = function() {
+        modal.classList.add('hidden');
+    }
+
+    continueChatBtn.onclick = function() {
+        const phoneNumber = '2349155064110'; // Replace with your WhatsApp number
+        const message = encodeURIComponent('Hello, I am interested in your portfolio.');
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(whatsappURL, '_blank');
+    }
+});
+
+
   
