@@ -12,35 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// document.getElementById('customForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     var firstName = document.getElementById('firstName').value;
-//     var lastName = document.getElementById('lastName').value;
-//     var emailAddress = document.getElementById('emailAddress').value;
-//     var message = document.getElementById('message').value;
-
-//     fetch('https://script.google.com/macros/s/AKfycbxtk3n_ZF7cWfk7uvNOtTG7jPiJfZiyoeBq9hSNwJifIy0b6-kYet5-oaSGpfyGU5HE/exec', {
-//         method: 'POST',
-//         body: JSON.stringify({FirstName: firstName, lastName: lastName, emailAddress: emailAddress, message: message}),
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         if (data.result === 'success') {
-//             document.getElementById('responseMessage').innerText = 'Form submitted successfully!';
-//             document.getElementById('customForm').reset();
-//         } else {
-//             document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
-//         }
-//     })
-//     .catch(error => {
-//         document.getElementById('responseMessage').innerText = 'There was an error submitting the form.';
-//         console.error('Error:', error);
-//     });
-// });
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -85,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     continueChatBtn.onclick = function() {
-        const phoneNumber = '2349155064110'; // Replace with your WhatsApp number
+        const phoneNumber = '2348110107215'; // Replace with your WhatsApp number
         const message = encodeURIComponent('Hello, I am interested in your portfolio.');
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(whatsappURL, '_blank');
@@ -101,7 +72,7 @@ let previousTranslate = 0;
 let animationID = 0;
 let currentIndex = 0;
 const slides = document.querySelectorAll('#carouselTrack > div');
-const intervalTime = 3000; // 3 seconds
+const intervalTime = 10000; // 10 seconds
 let autoScrollInterval;
 
 const carouselTrack = document.getElementById('carouselTrack');
