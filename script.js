@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     continueChatBtn.onclick = function() {
-        const phoneNumber = '2348110107215'; // Replace with your WhatsApp number
+        const phoneNumber = '2347061841293'; // Replace with your WhatsApp number
         const message = encodeURIComponent('Hello, I am interested in your portfolio.');
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(whatsappURL, '_blank');
