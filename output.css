@@ -2308,8 +2308,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-\[\#462755\] {
-  --tw-gradient-to: #462755 var(--tw-gradient-to-position);
+.to-\[\#5c1f5e\] {
+  --tw-gradient-to: #5c1f5e var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2587,21 +2587,21 @@ video {
   font-family: poppins;
 }
 
-.font-curly {
+.font-[poppins] {
   font-family: Marck Script;
 }
 
-.text-2xl {
+.text-3xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-3xl {
+.text-4xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-4xl {
+.text-5xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
@@ -3435,7 +3435,7 @@ video {
   letter-spacing: 0.05em;
 }
 
-.hover\:text-\[\#462755\]:hover {
+.hover\:text-\[\#5c1f5e\]:hover {
   --tw-text-opacity: 1;
   color: rgb(70 39 85 / var(--tw-text-opacity));
 }
@@ -3871,17 +3871,17 @@ video {
     text-align: start;
   }
 
-  .md\:text-2xl {
+  .md\:text-3xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .md\:text-3xl {
+  .md\:text-4xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .md\:text-4xl {
+  .md\:text-5xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
@@ -4135,7 +4135,7 @@ video {
     padding-top: 20%;
   }
 
-  .lg\:text-4xl {
+  .lg\:text-5xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
